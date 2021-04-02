@@ -1,5 +1,5 @@
 # Introduction #
-**README** is an important documentation as it is an entry point for any project. But I am quite lazy to switch between applications to see output and also I am learning *React.js*. Maybe I should do this as a project and here is the result. I know it is not quite powerful. But I hope it will help someone. :)
+**README** is an important documentation as it is an entry point for any project. But I am quite lazy to switch between applications to see output and also I am learning *React.js*. I thought maybe I should do this as a project and here is the result. I know it is not quite powerful. But I hope it will help someone. :)
 
 ## Requirements ##
 1. npm
