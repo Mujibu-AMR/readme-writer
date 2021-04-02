@@ -6,7 +6,7 @@
 2. React.js
 3. Browser
 
-## Installations ##
+## Installation ##
 1. Clone the project
 2. Open up the *terminal* or *commandline*.
 3. Navigate to the project folder.
