@@ -1,3 +1,7 @@
+body {
+  background-image: linear-gradient(to bottom, #0c162b, #050d1e);
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,52 @@
     transform: rotate(360deg);
   }
 }
+#head {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#editor_id {
+  top: 10px;
+  background-color: #e2e2e0;
+  height: 80vh;
+  width: 45vw;
+  border-radius: 10px;
+  position: relative;
+  left: 1vw;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  float: left;
+}
+#output_id {
+  display: flex;
+  top: 10px;
+  overflow-y: auto;
+  background-color: #e2e2e0;
+  position: relative;
+  right: 30px;
+  border-radius: 10px;
+  height: 80vh;
+  width: 45vw;
+  padding: 20px;
+  float: right;
+
+}
+
+textarea {
+  resize: none;
+  position: relative;
+  top: 0px;
+  background-color: #e2e2e0;
+  height: 80vh;
+  width: 45vw;
+  border: none;
+}
+#editor_id {
+  left: 30px;
+}
+
+pre {
+  white-space: pre-wrap; word-break: keep-all;
+ }

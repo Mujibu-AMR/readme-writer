@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React  from "react";
+import ReactMarkdown from "react-markdown";
+
 import './App.css';
 
+var output = document.getElementById('output_id');
+var editor = document.getElementById('editor_id');
+
+class Editor extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { txt : "" };
+  }
+  
+  render() {
+    return(
+      <>
+        <div id="editor_id" onScroll={()=>{ output.scrollTop = editor.scrollTop;}}>
+              <textarea onChange={(event) => {this.setState({txt: event.target.value})}}>
+              </textarea>
+        
+        </div>
+        <div id="output_id" onScroll={() => { editor.scrollTop = output.scrollTop;}}>
+        <pre><ReactMarkdown>{this.state.txt}</ReactMarkdown></pre>
+       </div>
+      </>
+        );
+  }
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1 id="head">ReadMe.md Writer</h1>
+      <Editor/>
+    </>
+     );
 }
 
 export default App;
